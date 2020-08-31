@@ -15,11 +15,11 @@
     <title>Jannik Norden</title>
 </head>
 <body>
-    <nav id="nav" class="navbar navbar-expand-lg navbar-light pt-3 pb-3" style="top: -75px; display: none; position: fixed; z-index: 1; width: 100%; border-radius: 0px 0px 20px 20px; box-shadow: rgba(0, 0, 0, 0.15) 0px 2px; background-color: #034748">
+    <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3" id="nav">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a id="close" class="text-light" onclick="closeNav()" style="font-size: 27px; margin: 0px 10px 0px 12px; cursor: pointer;">&times;</a>
+                    <a class="text-light" id="close" onclick="closeNav()">&times;</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="#home">Home <span class="sr-only">(current)</span></a>
@@ -50,8 +50,8 @@
         </div>
     </nav>
 
-    <div id="menu" class="mt-3 ml-3 text-center" onclick="openNav()" style="width: 40px; height: 40px; border-radius: 20px; position: fixed; z-index: 1;  background-color: #034748; cursor: pointer">
-        <p class="text-light mt-2" style="transform: translate(0%, 0%)">&#9776</p>
+    <div id="menu" class="mt-3 ml-3 text-center" onclick="openNav()">
+        <p class="text-light mt-2">&#9776</p>
     </div>
     <!--Navigation end-->
 
@@ -65,9 +65,10 @@
 
     <h2 id="skills">Skills</h2>
     <p>Technologies I am working with</p>
+    <!--[_] Images should be resized without CSS-->
     <div class="row m-5">
         <div class="col-sm">
-            <div class="card text-center p-3" style="">
+            <div class="card text-center p-3">
                 <img class="card-img-top" src="/Users/Jannik/Documents/Personal Website/img/web_tech.png" alt="HTML5, CSS3 and Javascript" style="height: 150px; width: 168px; align-self: center">
                 <div class="card-body">
                     <h3>
@@ -80,7 +81,7 @@
             </div>
         </div>
         <div class="col-sm">
-            <div class="card text-center p-3" style="">
+            <div class="card text-center p-3">
                 <img class="card-img-top" src="/Users/Jannik/Documents/Personal Website/img/net.png" alt="C#" style="height: 150px; width: 300px; align-self: center">
                 <div class="card-body text-center">
                     <h3>
@@ -93,7 +94,7 @@
             </div>
         </div>
         <div class="col-sm">
-            <div class="card text-center p-3" style="">
+            <div class="card text-center p-3">
                 <img class="card-img-top" src="/Users/Jannik/Documents/Personal Website/img/java.png" alt="Java" style="height: 150px; width: 269px; align-self: center">
                 <div class="card-body">
                     <h3>
@@ -108,18 +109,18 @@
     </div>
 
     <!--Contact-banner-->
-    <div class="pt-4" id="contact" style="width: 100%; height: 100px; background-color: #001021; padding-left: 400px">
-        <div class="text-light" style="font-size: 30px; float: left">
+    <div class="pt-4" id="contact">
+        <div class="text-light" id="contactContainer">
             Let's get in touch.
-            <div class="ml-4 text-center" style="background-color: #1481BA; width: 200px; height: 50px; border-radius: 25px; float: right">
-                <a class="text-light" href="mailto:dev.janniknorden@gmail.com" style="font-size: 25px">
+            <div class="ml-4 text-center" id="contactButton">
+                <a class="text-light" href="mailto:dev.janniknorden@gmail.com" id="contactText">
                     Email me!
                 </a>
             </div>
         </div>
     </div>
 
-    <h2 id="projects" style="color: #001021">Projects</h2>
+    <h2 id="projects">Projects</h2>
     <p>My projects</p>
     <ul class="list-group" style="width: 40%; margin: auto">
         <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -136,11 +137,12 @@
         </li>
     </ul>
 
-    <h2 id="coding_challenges" style="color: #001021">Coding Challenges</h2>
+    <!--[_] Change contant-->
+    <h2 id="coding_challenges">Coding Challenges</h2>
     <p>Technologies I am working with</p>
     <div class="row m-5">
         <div class="col-sm">
-            <div class="card text-center p-3" style="">
+            <div class="card text-center p-3">
                 <img class="card-img-top" src="/Users/Jannik/Documents/Personal Website/img/web_tech.png" alt="HTML5, CSS3 and Javascript" style="height: 150px; width: 168px; align-self: center">
                 <div class="card-body">
                     <h3>
@@ -153,7 +155,7 @@
             </div>
         </div>
         <div class="col-sm">
-            <div class="card text-center p-3" style="">
+            <div class="card text-center p-3">
                 <img class="card-img-top" src="/Users/Jannik/Documents/Personal Website/img/net.png" alt="C#" style="height: 150px; width: 300px; align-self: center">
                 <div class="card-body text-center">
                     <h3>
@@ -166,7 +168,7 @@
             </div>
         </div>
         <div class="col-sm">
-            <div class="card text-center p-3" style="">
+            <div class="card text-center p-3">
                 <img class="card-img-top" src="/Users/Jannik/Documents/Personal Website/img/java.png" alt="Java" style="height: 150px; width: 269px; align-self: center">
                 <div class="card-body">
                     <h3>
@@ -185,7 +187,7 @@
         <h2 id="blog">Blog</h2>
     -->
 
-    <footer class="p-3" style="background-color: #034748">
+    <footer class="p-3">
         <span><a class="text-light" href="" rel="designer">&copy; Jannik Norden</a></span>
     </footer>
 

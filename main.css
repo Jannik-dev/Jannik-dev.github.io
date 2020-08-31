@@ -6,3 +6,58 @@ h2 {
     color: #001021;
     margin: 20px;
 }
+
+#nav {
+    top: -75px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px;
+    background-color: #034748;
+}
+
+#close {
+    font-size: 27px;
+    margin: 0px 10px 0px 12px;
+    cursor: pointer;
+}
+
+#menu {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 1;
+    background-color: #034748;
+    cursor: pointer;
+}
+
+#contact {
+    width: 100%;
+    height: 100px;
+    background-color: #001021;
+    padding-left: 400px;
+}
+
+#contactContainer {
+    font-size: 30px;
+    float: left;
+}
+
+#contactButton {
+    background-color: #1481BA;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    float: right;
+}
+
+#contactText {
+    font-size: 25px;
+}
+
+footer {
+    background-color: #034748;
+}
