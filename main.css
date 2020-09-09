@@ -8,8 +8,16 @@ h2 {
     text-align: center;
 }
 
+.text{
+    font-size: 20px;
+}
+
 .topic-container {
-    margin: 5%;
+    margin: 10% 5% 10% 5%;
+}
+
+.divider {
+    margin-bottom: 3%;
 }
 
 #nav {
@@ -40,16 +48,17 @@ h2 {
     cursor: pointer;
 }
 
+#typewriterText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #contact {
     width: 100%;
     height: 100px;
     background-color: #001021;
-    padding-left: 400px;
-}
-
-#contactContainer {
-    font-size: 30px;
-    float: left;
 }
 
 #contactButton {
@@ -57,7 +66,7 @@ h2 {
     width: 200px;
     height: 50px;
     border-radius: 25px;
-    float: right;
+    font-size: 30px;
 }
 
 #contactText {

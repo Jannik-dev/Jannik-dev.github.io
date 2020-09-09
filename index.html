@@ -22,7 +22,7 @@
                     <a class="text-light" id="close" onclick="closeNav()">&times;</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="#about">About</a>
@@ -55,29 +55,33 @@
     </div>
     <!--Navigation end-->
 
-    <p id="home" style="display:none"></p>
-    <img src="/Users/Jannik/Documents/Personal Website/img/code.jpg" alt="placeholder" style="width: 100%">
-
-    <h1>
-        <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+    <div style="position: relative;">
+        <img src="\Users\Jannik\source\repos\PersonalWebsite\img\code.jpg" alt="placeholder" style="width: 100%;">
+        <h1 id="typewriterText" style="color: white;" href="" class="typewrite" data-period="2000" data-type='[ "Hi, I am Jannik.", "I am a WebDeveloper.", "I Love to Develop." ]'>
             <span class="wrap"></span>
-        </a>
-    </h1>
+        </h1>
+    </div>
 
     <div class="topic-container">
         <h2 id="about">About</h2>
-        <hr />
-        <img src="" alt="">
-        <p></p>
+        <hr class="divider" />
+        <div class="row">
+            <div class="col">
+                <img src="\Users\Jannik\source\repos\PersonalWebsite\img\mona.jfif" alt="" style="width: 100%">
+            </div>
+            <div class="col">
+                <p class="text">Hello, I am Jannik from Germany. Scince 2017 I am interested in Programming. My journey began with C#. I expande my horizon every day with projects, online-courses or reading books.</p>
+            </div>
+        </div>
     </div>
     <!--Ja für die Bewerbung-->
 
     <div class="topic-container">
         <h2 id="skills">Skills</h2>
-        <hr />
-        <p>Technologies I am working with</p>
+        <hr class="divider" />
+        <p class="text">Technologies I am familiar with. I learned them in theory and used them to build projects.</p>
         <!--[_] Images should be resized without CSS-->
-        <div class="row m-5">
+        <div class="row m-3">
             <div class="col-sm">
                 <div class="card text-center p-3">
                     <img class="card-img-top" src="/Users/Jannik/Documents/Personal Website/img/web_tech.png" alt="HTML5, CSS3 and Javascript" style="height: 150px; width: 168px; align-self: center">
@@ -122,31 +126,37 @@
 
     <!--Contact-banner-->
     <div class="pt-4" id="contact">
-        <div class="text-light" id="contactContainer">
-            Let's get in touch.
-            <div class="ml-4 text-center" id="contactButton">
-                <a class="text-light" href="mailto:dev.janniknorden@gmail.com" id="contactText">
-                    Email me!
-                </a>
+        <div class="text-light">
+            <div class="row">
+                <div id="contactText" class="col pt-1" style="text-align: end">
+                    Let's get in touch.
+                </div>
+                <div class="col">
+                    <div class="text-center" id="contactButton">
+                        <a class="text-light" href="mailto:dev.janniknorden@gmail.com" id="contactText">
+                            Email me!
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="topic-container">
         <h2 id="projects">Projects</h2>
-        <hr />
-        <p>My projects</p>
-        <ul class="list-group" style="width: 40%; margin: auto">
+        <hr class="divider" />
+        <p class="text">Here is a list of current projects with it's state</p>
+        <ul class="list-group" style="width: 90%; margin: auto">
             <li class="list-group-item d-flex justify-content-between align-items-center">
-                Website - Saric Technologies
+                <a href="http:\\sarictechnologies.com" class="text">Website - Saric Technologies</a>
                 <span class="badge badge-warning badge-pill">On going</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
-                Personal Website
+                <a class="text">Personal Website</a>
                 <span class="badge badge-success badge-pill">Done</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
-                One for all
+                <a class="text">One for all</a>
                 <span class="badge badge-primary badge-pill">Planing</span>
             </li>
         </ul>
@@ -155,9 +165,9 @@
     <div class="topic-container">
         <!--[_] Change contant-->
         <h2 id="coding_challenges">Coding Challenges</h2>
-        <hr />
-        <p>Technologies I am working with</p>
-        <div class="row m-5">
+        <hr class="divider" />
+        <p class="text">I solved Coding challenges on Hackerrank. Here are some build with an UI. Feel free to experiment!</p>
+        <div class="row m-3">
             <div class="col-sm">
                 <div class="card text-center p-3">
                     <img class="card-img-top" src="/Users/Jannik/Documents/Personal Website/img/web_tech.png" alt="HTML5, CSS3 and Javascript" style="height: 150px; width: 168px; align-self: center">
