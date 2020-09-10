@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3" id="nav">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="text-light" id="close" onclick="closeNav()">&times;</a>
                 </li>
@@ -65,18 +65,14 @@
             <span class="wrap"></span>
         </h1>
     </div>
+    <figcaption id="imageCaption">
+        Photo by <a href="https://unsplash.com/@shemul?utm_source=medium&amp;utm_medium=referral&amp;ref=hackernoon.com" target="_blank" rel="noopener noreferrer ugc">Shahadat Shemul</a> on&nbsp;<a href="https://unsplash.com/?utm_source=medium&amp;utm_medium=referral&amp;ref=hackernoon.com" target="_blank" rel="noopener noreferrer ugc">Unsplash</a>
+    </figcaption>
 
     <div class="topic-container">
         <h2 id="about">About</h2>
         <hr class="divider" />
-        <div class="row">
-            <div class="col">
-                <img src="" alt="" style="width: 100%">
-            </div>
-            <div class="col">
-                <p class="text">Hello, I am Jannik from Germany. Scince 2017 I am interested in programming. My journey began with C#. I expand my horizon every day with projects, online-courses or reading books.</p>
-            </div>
-        </div>
+        <p class="text">Hello, I am Jannik from Germany. Scince 2017 I am interested in programming. My journey began with C#. I expand my horizon every day with projects, online-courses or reading books.</p>
     </div>
     <!--Ja für die Bewerbung-->
 
@@ -90,25 +86,15 @@
                 <div class="card text-center p-3">
                     <img class="card-img-top" src="./img/web_tech.png" alt="HTML5, CSS3 and Javascript" style="height: 150px; width: 168px; align-self: center">
                     <div class="card-body">
-                        <h3>
-                            Webdevelopment
-                        </h3>
-                        <p>
-                            <a href="">Learn More...</a>
-                        </p>
+                        <span>In every webproject i worked with HTML, CSS and Javascript, right now i am learning how to use bootstrap.</span>
                     </div>
                 </div>
             </div>
             <div class="col-sm">
                 <div class="card text-center p-3">
                     <img class="card-img-top" src="./img/net.png" alt="C#" style="height: 150px; width: 300px; align-self: center">
-                    <div class="card-body text-center">
-                        <h3>
-                            C# and Asp.NET Core
-                        </h3>
-                        <p>
-                            <a href="">Learn More...</a>
-                        </p>
+                    <div class="card-body">
+                        <span>I worked with C# and .NET to build a webcrawler and a small applications in connection to ASP.NET.</span>
                     </div>
                 </div>
             </div>
@@ -116,12 +102,7 @@
                 <div class="card text-center p-3">
                     <img class="card-img-top" src="./img/java.png" alt="Java" style="height: 150px; width: 269px; align-self: center">
                     <div class="card-body">
-                        <h3>
-                            Java
-                        </h3>
-                        <p>
-                            <a href="">Learn More...</a>
-                        </p>
+                        <span>I used Java in combination with springboot to build an webapplication that manipulates integer lists.</span>
                     </div>
                 </div>
             </div>
@@ -170,31 +151,22 @@
         <!--[_] Change content-->
         <h2 id="coding_challenges">Coding Challenges</h2>
         <hr class="divider" />
-        <p class="text">I solved coding challenges on Hackerrank. Here are some build with an UI. Feel free to experiment!</p>
+        <p class="text">I solved coding challenges on Hackerrank to test my skills.</p>
         <div class="row m-3">
             <div class="col-sm">
                 <div class="card text-center p-3">
-                    <img class="card-img-top" src="./img/web_tech.png" alt="HTML5, CSS3 and Javascript" style="height: 150px; width: 168px; align-self: center">
+                    <img class="card-img-top" src="./img/hackerrank.png" alt="Hackerrank" style="height: 150px; width: 202px; align-self: center">
                     <div class="card-body">
-                        <h3>
-                            Webdevelopment
-                        </h3>
-                        <p>
-                            <a href="">Learn More...</a>
-                        </p>
+                        <a href="https://www.hackerrank.com/jannikn_2003">Learn More...</a>
                     </div>
                 </div>
             </div>
+            <!-- Coming soon
             <div class="col-sm">
                 <div class="card text-center p-3">
                     <img class="card-img-top" src="./img/net.png" alt="C#" style="height: 150px; width: 300px; align-self: center">
                     <div class="card-body text-center">
-                        <h3>
-                            C# and Asp.NET Core
-                        </h3>
-                        <p>
-                            <a href="">Learn More...</a>
-                        </p>
+                         <a href="">Learn More...</a>
                     </div>
                 </div>
             </div>
@@ -202,15 +174,11 @@
                 <div class="card text-center p-3">
                     <img class="card-img-top" src="./img/java.png" alt="Java" style="height: 150px; width: 269px; align-self: center">
                     <div class="card-body">
-                        <h3>
-                            Java
-                        </h3>
-                        <p>
-                            <a href="">Learn More...</a>
-                        </p>
+                         <a href="">Learn More...</a>
                     </div>
                 </div>
             </div>
+            -->
         </div>
     </div>
 
@@ -220,7 +188,7 @@
     -->
 
     <footer class="p-3">
-        <span><a class="text-light" href="" rel="designer">&copy; Jannik Norden</a></span>
+        <span class="text-light ml-3">&copy; Jannik Norden</span>
     </footer>
 
     <!-- Optional JavaScript -->
